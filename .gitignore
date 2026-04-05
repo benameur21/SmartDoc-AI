@@ -1,13 +1,23 @@
-# Never push the raw dataset — too large
+# Dataset too large for GitHub
 data/arxiv-metadata-oai-snapshot.json
 data/*.json
 
-# Never push trained models
-models/*.pkl
+# Virtual environment
+venv/
 
-# Python
+# Models
+models/*.pkl
+models/*.index
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Environment variables
+.env
+
+# Python cache
 __pycache__/
 *.pyc
-.env
-venv/
-.ipynb_checkpoints/
+
+# VS Code
+.vscode/
