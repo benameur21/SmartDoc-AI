@@ -15,25 +15,22 @@ import spacy
 import nltk 
 
 # Auto-download spaCy model on cloud
+load_dotenv()
+
+st.set_page_config(
+    page_title="SmartDoc AI",
+    page_icon="📄",
+    layout="wide"
+)
+
 @st.cache_resource
 def download_models():
-    # spaCy model is installed via requirements.txt, no need to download here
-
-    # ── NLTK models ──
     nltk.download('punkt', quiet=True)
     nltk.download('stopwords', quiet=True)
     nltk.download('wordnet', quiet=True)
-
     return "models ready"
 
-load_dotenv()
-
-# ── Page config ──────────────────────────────────────────────
-st.set_page_config(
-    page_title  = "SmartDoc AI",
-    page_icon   = "📄",
-    layout      = "wide"
-)
+download_models()  # call AFTER set_page_config
 
 # ── Load models ──────────────────────────────────────────────
 @st.cache_resource
