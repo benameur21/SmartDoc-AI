@@ -11,16 +11,27 @@ from groq import Groq
 from dotenv import load_dotenv
 import subprocess
 import sys
+import spacy
+import nltk 
 
 # Auto-download spaCy model on cloud
 @st.cache_resource
 def download_models():
-    subprocess.run([sys.executable, "-m", "spacy", "download",
-                   "en_core_web_sm"], capture_output=True)
-    import nltk
-    nltk.download('punkt',     quiet=True)
+    # ── spaCy model ──
+    try:
+        spacy.load("en_core_web_sm")
+    except:
+        subprocess.run(
+            [sys.executable, "-m", "spacy", "download", "en_core_web_sm"],
+            check=True
+        )
+
+    # ── NLTK models ──
+    nltk.download('punkt', quiet=True)
     nltk.download('stopwords', quiet=True)
-    nltk.download('wordnet',   quiet=True)
+    nltk.download('wordnet', quiet=True)
+
+    return "models ready"
 
 download_models()
 

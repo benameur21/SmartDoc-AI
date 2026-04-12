@@ -148,6 +148,5 @@ arXiv JSON Dataset (1.7M papers)
 MIT License — see [LICENSE](LICENSE) for details.
 
 ---
-
 ## 🙋‍♂️ Author
 Built by Islem Ben Ameur.
