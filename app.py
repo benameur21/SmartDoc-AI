@@ -17,14 +17,7 @@ import nltk
 # Auto-download spaCy model on cloud
 @st.cache_resource
 def download_models():
-    # ── spaCy model ──
-    try:
-        spacy.load("en_core_web_sm")
-    except:
-        subprocess.run(
-            [sys.executable, "-m", "spacy", "download", "en_core_web_sm"],
-            check=True
-        )
+    # spaCy model is installed via requirements.txt, no need to download here
 
     # ── NLTK models ──
     nltk.download('punkt', quiet=True)
@@ -32,8 +25,6 @@ def download_models():
     nltk.download('wordnet', quiet=True)
 
     return "models ready"
-
-download_models()
 
 load_dotenv()
 
