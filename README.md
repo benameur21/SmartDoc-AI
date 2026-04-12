@@ -149,8 +149,6 @@ MIT License — see [LICENSE](LICENSE) for details.
 
 ---
 
-<div align="center">
-
-**Built by Islem Ben ameur **
-
-</div>
+🙋‍♂️  Author
+Built by Islem ben ameur
+---
