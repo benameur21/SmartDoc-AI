@@ -12,8 +12,7 @@ models/*.index
 # Jupyter checkpoints
 .ipynb_checkpoints/
 
-# Environment variables
-.env
+.streamlit/secrets.toml
 
 # Python cache
 __pycache__/
