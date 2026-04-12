@@ -9,9 +9,6 @@ from sentence_transformers import SentenceTransformer
 from sklearn.feature_extraction.text import TfidfVectorizer
 from groq import Groq
 from dotenv import load_dotenv
-import subprocess
-import sys
-import spacy
 import nltk 
 
 # Auto-download spaCy model on cloud
