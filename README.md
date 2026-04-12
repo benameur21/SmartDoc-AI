@@ -1,22 +1,5 @@
 # 📄 SmartDoc AI — Intelligent Research Paper Analysis System
 
-<div align="center">
-
-![Python](https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![FAISS](https://img.shields.io/badge/FAISS-00599C?style=for-the-badge&logo=meta&logoColor=white)
-![Groq](https://img.shields.io/badge/Groq-F55036?style=for-the-badge)
-![spaCy](https://img.shields.io/badge/spaCy-09A3D5?style=for-the-badge&logo=spacy&logoColor=white)
-
-**An end-to-end NLP pipeline that automatically reads, understands, and analyzes scientific research papers.**
-
-*Classification · Summarization · NER · Semantic Search · RAG Chatbot*
-
-[🚀 Live Demo](#) · [📓 Notebook](#) · [📊 Dataset](https://www.kaggle.com/datasets/Cornell-University/arxiv)
-
-</div>
-
 ---
 
 ## 🎯 Project Overview
