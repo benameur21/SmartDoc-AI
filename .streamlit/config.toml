@@ -7,3 +7,6 @@ primaryColor = "#2E75B6"
 backgroundColor = "#0E1117"
 secondaryBackgroundColor = "#1A1A2E"
 textColor = "#FAFAFA"
+
+[runner]
+python_version = "3.10"
