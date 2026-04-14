@@ -105,24 +105,25 @@ streamlit run app.py
 ## 🧠 ML Pipeline
 
 ```
-arXiv JSON Dataset (1.7M papers)
-         ↓
-    Sample 5,000 papers
-         ↓
-┌─────────────────────────────────────────────┐
-│  Section 1 — Data Loading                   │
-│  Section 2 — EDA (5 visualizations)         │
-│  Section 3 — Text Preprocessing (7 steps)   │
-│  Section 4 — Feature Engineering (22 feats) │
-│  Section 5 — Model Comparison (4 models)    │
-│  Section 6 — NER (spaCy)                    │
-│  Section 7 — Summarization + RAG (FAISS)    │
-│  Section 8 — Drafts & Experimentations      │
-└─────────────────────────────────────────────┘
-         ↓
-   Streamlit Chatbot (app.py)
-         ↓
-   Groq LLM (llama-3.3-70b-versatile)
+User uploads document (PDF)
+            ↓
+Text Extraction
+            ↓
+Chunking (split document into small parts)
+            ↓
+Embeddings (convert each chunk into vector)
+            ↓
+Store vectors in FAISS (Vector Database)
+            ↓
+User asks a question
+            ↓
+Convert question into vector
+            ↓
+FAISS retrieves most similar chunks
+            ↓
+Send relevant chunks to LLM (Groq - Llama 3)
+            ↓
+Final answer generated
 ```
 ---
 
